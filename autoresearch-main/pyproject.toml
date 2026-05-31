@@ -1,0 +1,23 @@
+[project]
+name = "policy-controller"
+version = "0.1.0"
+description = "Zenoh policy controller for the autoresearch servo actuator"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "eclipse-zenoh>=1.0.0",
+    "httpx>=0.28.1",
+    "modal>=1.2.0",
+    "openai>=2.0.0",
+    "raindrop-ai>=0.0.50",
+]
+
+[project.scripts]
+episode-manager = "episode_manager.app:main"
+modal-csv-analyzer = "policy_optimizer.modal_csv_analyzer:main"
+policy-optimizer = "policy_optimizer.app:main"
+policy-controller = "policy_controller.app:main"
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.9.0"]
+build-backend = "uv_build"

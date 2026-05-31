@@ -1,0 +1,375 @@
+{
+    "csv_count": 73,
+    "elapsed_s": 420.383,
+    "findings": [
+        {
+            "path": "episodes/2026-05-30T21:33:12.748512Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary conclusion: include this episode as a positive example for the OptimizedPolicy.\n\nKey quantitative points\n- 10 samples total; 8 samples with x-velocity > 0.\n- max x during positive-velocity phases = 1.3006; positive-velocity x gain = 1.0333 (good forward progress).\n- absolute servo angle travel = 0.0 (secondary objective perfectly satisfied).\n- servo_angle_rad constant at 2.76255 throughout the episode.\n\nUseful servo patterns\n- Hold servo angle constant (here ~2.76255 rad) during positive-x-velocity periods. This produces steady forward gain while incurring zero angle travel.\n- Minimal/no servo adjustments appear sufficient to maximize"
+        },
+        {
+            "path": "episodes/2026-05-30T21:29:32.733668Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary conclusion\n- This episode shows a clean, desirable pattern: almost continuous positive x velocity with minimal servo movement and a strong x gain. It is a useful example for the optimizer and should influence OptimizedPolicy (but not overweighted).\n\nUseful servo patterns (to encourage)\n- Hold servo steady during forward (x-velocity > 0) periods. Here servo_angle_rad = 2.414568760"
+        },
+        {
+            "path": "episodes/2026-05-30T21:37:02.400280Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nEpisode summary\n- 66 samples; 34 samples with positive x-velocity.\n- max x during"
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:00.243026Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nUseful servo patterns\n- Hold elevated servo angles (~"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:23.083758Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:09.122905Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "",
+            "error": "Could not deserialize remote exception due to local error:\nEncountered an error when deserializing an object in the local environment (see above for details).\nThis can happen if your local environment does not have the remote exception definitions.\nHere is the remote traceback:\nTraceback (most recent call last):\n  File \"/pkg/modal/_runtime/container_io_manager.py\", line 945, in handle_input_exception\n    yield\n  File \"/pkg/modal/_container_entrypoint.py\", line 189, in run_input_sync\n    values = io_context.call_function_sync()\n  File \"/pkg/modal/_runtime/container_io_manager.py\", line 225, in call_function_sync\n    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)\n  File \"/root/policy_optimizer/modal_csv_analyzer.py\", line 44, in analyze_csv_remote\n    response = OpenAI(timeout=payload[\"timeout_s\"], max_retries=0).responses.create(\n        model=model,\n    ...<2 lines>...\n        reasoning={\"effort\": payload[\"reasoning_effort\"]},\n    )\n  File \"/usr/local/lib/python3.13/site-packages/openai/resources/responses/responses.py\", line 920, in create\n    return self._post(\n           ~~~~~~~~~~^\n        \"/responses\",\n        ^^^^^^^^^^^^^\n    ...<45 lines>...\n        stream_cls=Stream[ResponseStreamEvent],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/site-packages/openai/_base_client.py\", line 1332, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/site-packages/openai/_base_client.py\", line 1105, in request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.InternalServerError: Error code: 500 - {'error': {'message': 'An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID req_07187cf2a8db42128d44c90e7a6c6426 in your message.', 'type': 'server_error', 'param': None, 'code': 'server_error'}}\n"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:22.190002Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:32.556022Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:57.979449Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:27.002470Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary conclusion\n- This episode shows a clear useful pattern: long constant-angle holds with a single deliberate switch into a high-angle state that coincides with sustained positive x-velocity and a large x gain. The episode is worth using as a behavioral example for the OptimizedPolicy (recommend: yes).\n\nUseful servo"
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:54.158462Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary metrics\n- Samples: 67 (31 with x-velocity > 0)\n- Max x during positive-velocity windows: 1.2137\n- Positive-velocity"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:42.130016Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n\nKey observations from this episode\n- During the useful forward/x-positive phase the servo stayed essentially constant at ~2.372 rad while x increased (good, low-angle travel during productive motion).\n- A large abrupt servo change (~2.344 \u2192 0.768 rad, ~1.576 rad change) occurs later, coincident with the phase where x velocity is zero/negative and x plateaus (~0.3). That large change accounts for most of the"
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:45.152120Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary verdict\n- Yes \u2014 this episode contains a clear useful pattern that should influence OptimizedPolicy, with caution: it also shows harmful timing of large early angle moves that reduced effectiveness and raised angle travel.\n\nUseful servo patterns (to reinforce"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:18.565735Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:51.108323Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nUseful servo patterns\n- Long plateaus at fixed angles produce steady forward progress. In this episode the servo holds ~"
+        },
+        {
+            "path": "episodes/2026-05-30T21:28:52.250839Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary recommendation: keep.\n\nKey observations from this episode\n- Servo sequence: three sustained plateaus: ~0.765 rad (initial), then ~1.592 rad (mid), then ~2.269 rad (late). Changes are stepwise at a few timestamps rather than continuous oscillation.\n- Behavior: x decreases while servo is low, then"
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:00.278592Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary judgment\n- Recommendation: Do NOT incorporate this episode directly into OptimizedPolicy. It shows no clear, repeatable improvement pattern and exhibits excessive servo travel (~6.283"
+        },
+        {
+            "path": "episodes/2026-05-30T21:37:21.515036Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary of episode\n- 4 samples, 3 with x-velocity > 0. Max x during positive-velocity phase = 1.29919. Positive-velocity x gain = 0.55. Absolute servo travel = 0.0 (servo held constant at 1.3236112837946332 rad).\n\nUseful servo patterns\n- Holding a constant servo angle (\u2248 1.3236113 rad) while x-velocity > 0:\n  - Achieves steady positive x progress in this episode.\n  - Minimizes secondary objective (absolute angle travel = 0).\n- Implicit policy element: \"do not move the servo while in a positive-x phase\" \u2014 keeps travel cost at zero and preserves forward gain.\n\nHarmful patterns\n- Any unnecessary servo motion / oscillation during positive-x phases:"
+        },
+        {
+            "path": "episodes/2026-05-30T21:25:04.091631Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:24:54.748862Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary metrics\n- Samples: 80 (41 with x-velocity > 0).\n- Positive-velocity x gain \u2248 1.00006 (no suspicious amplification, essentially neutral).\n- Absolute servo travel = 4.30 rad (moderate"
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:10.848768Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary of behavior in this episode\n- Two steady servo regimes:"
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:23.291297Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:32:41.438364Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:32:58.456800Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary recommendation: include the episode for target-angle"
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:37.785520Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:21.748137Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:19.657705Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary judgment: Yes \u2014 this episode supports adding/strengthening a rule in OptimizedPolicy to hold a steady servo angle that produces sustained positive x velocity and to avoid angle changes except when entering negative-x phases.\n\nKey facts (concise)\n- Samples: 13 (10"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:03.707115Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary metrics\n- sample_count 75, positive-velocity samples 34 (about half).\n- positive_velocity_x_gain = +1.109 \u2014 during positive-velocity windows x increases by ~1"
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:45.085165Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:13.078291Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:32:14.516255Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:20.054021Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n- Episode shows a single, discrete servo change: held at 1.441596235 for the first half, then stepped to 2.089531672 and held"
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:35.083311Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:50.567257Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:55.568515Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:00.744975Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary recommendation: Do not merge this episode directly into OptimizedPolicy as a positive exemplar. The episode achieved only a small net x gain during forward-"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:32.830881Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n- Episode behavior: 4 samples, 3 with x-velocity > 0, net x gain during positive-velocity periods = 0.1203, peak x while moving forward = 1.0175. Servo angle was constant (1.7785248863578837 rad) across the entire episode, so absolute_angle_travel = 0. Score"
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:07.828686Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:56.388277Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n- Episode is very short (2 samples) but informative: x increased from 0.84108567 to 0.85131025 while the servo stayed fixed at 0.5382293018865165 rad. Absolute servo travel = 0.0.\n- Positive-velocity period: one sample; max x during that period = 0.85131; positive_velocity_x_gain = 0.0102246.\n- Score 0.86153 reflecting good x and zero servo movement.\n\nUseful servo patterns\n- Hold servo steady (no movement) when x velocity > 0. In this episode, a constant servo angle of \u22480.53823 rad coincided with positive x growth.\n- Small/no adjustments when already gaining x: zero travel minimized the secondary objective while delivering positive primary gain.\n\nHarmful patterns (to avoid)\n-"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:27.307268Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:47.279844Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:29:21.967284Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary decision\n- Do not use this episode wholesale to update OptimizedPolicy."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:41.595226Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n- Episode is tiny (2 samples). One positive-velocity sample; x increased from 0.25197 to 0.44192 (gain 0.18995). Servo angle was exactly constant at 1.1784745714626095 rad (absolute travel = 0).\n- Score 0.6319 reflects small forward gain with zero servo movement.\n\nUseful servo patterns\n- Hold servo steady at ~1.1785 rad during forward-velocity periods. This achieved a positive x gain while incurring zero servo travel cost.\n- Minimal/no servo adjustments when x-velocity > 0 appear"
+        },
+        {
+            "path": "episodes/2026-05-30T21:37:21.347286Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n- This episode shows consistently positive x velocity (3 positive transitions of 3), with x rising from 0.0363 \u2192 0.38915 while the servo made a single early change. That change coincides with the majority"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:32.791613Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary\n- This episode shows a short positive-x-velocity interval: x increased from 0.1025925 \u2192 0.2857057 (\u0394x = +0.1831132) over ~30.8 ms.\n- Servo_angle_rad was constant at 2.4004842099785195 (absolute_angle_travel = 0).\n- No negative-velocity phases are present to ignore.\n\nUseful servo patterns\n- Holding the servo steady at ~2.40048 rad while the agent moved forward. This produced a measurable positive x gain with zero servo travel, matching the primary objective (maximize x during positive-velocity periods) and the secondary objective (min"
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:48.322810Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary\n- Positive-x motion occurred only after the servo moved from ~1.206 rad up to ~2.400 rad (later trimmed to ~2.290 rad). Before that (servo \u2248 1.206) x was flat/slightly negative.\n- Positive-velocity samples = 18, max x during those = 0.2255. The episode\u2019s main means of gaining x was switching the"
+        },
+        {
+            "path": "episodes/2026-05-30T21:29:04.480785Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary \u2014 episode too limited to learn from\n- This episode contains a single timestamped sample with no positive-x-velocity period (positive_velocity_sample_count = 0). All derived metrics are zero.\n- Absolute servo travel is zero (only one sample; servo_angle_rad = 0.01048 rad). No motion or transitions to analyze.\n\nUseful servo patterns (none confirmed)\n- A small, near-zero servo angle (\u2248 0.01048 rad) appeared; that is consistent with the secondary objective (minimize angle travel), but a single static sample does not demonstrate repeatable useful patterns for maximizing x during positive-x-velocity periods.\n\nHarmful patterns (none observed)\n- No oscillations, reversals, or large-angle travels were recorded. No harmful servo behavior can be identified from this episode.\n\nRecommendation for policy code (src/policy_controller/policy.py:OptimizedPolicy)\n- Do not modify OptimizedPolicy based on this episode. Data are insufficient (no positive-x-velocity segment and only one sample).\n- Next steps: collect episodes with time-series data that include periods where x_velocity > 0. Ensure the CSV contains multiple timestamps so you can measure x velocity, x gain during positive-velocity windows, and servo-angle transitions before changing the policy.\n\nIf you want, I can:\n- Suggest specific experiment perturbations to el"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:20.031021Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n\n- Data quality: This episode contains a single sample only. No velocity can be computed from one timestamp, so all computed metrics are zero/degenerate and uninformative.\n- Positive-x-phase objective: Not met. positive_velocity_sample_count = 0, max_x_during_positive_velocity = 0, positive_velocity_x_gain = 0.\n- Servo-travel objective: No movement observed (absolute_angle_travel = 0) but that is a consequence of single sample, not evidence of a useful low-travel pattern.\n\nUseful servo patterns\n- None identifiable. Single-sample data cannot reveal timing, oscillation, or smooth-minimization patterns.\n\nHarmful patterns\n- Episodes with no positive x-velocity are harmful to the primary objective (maximize x during x-velocity > 0) and should not be used for reward shaping or policy gradient updates.\n- Single-sample/zero-length episodes are harmful for learning because they provide no dynamic information (no velocity or servo-change signal).\n\nRecommendation for src/policy_controller/policy.py:OptimizedPolicy\n- Do not incorporate this episode into training or policy updates.\n- Filter out episodes with positive_velocity_sample_count == 0 and/or sample_count < 2.\n- Require minimal episode length (>=2 samples) to compute velocities and meaningful servo-travel before using"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:32.892538Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary\n- This episode contains a single sample so no x-velocity > 0 periods were observed (positive_velocity_sample_count = 0).\n- No x gain during positive-velocity periods (max_x_during_positive_velocity = 0, positive_velocity_x_gain = 0).\n- No servo motion recorded (absolute_angle_travel = 0).\n\nUseful servo patterns\n- None can be extracted from this episode. A single static sample gives no temporal information about servo commands or beneficial motion correlated with forward x velocity.\n\nHarmful patterns\n- None observed in this file. The episode contains no negative-velocity phases or large servo excursions to identify as harmful.\n\nRecommendation for OptimizedPolicy (src/policy_controller/policy.py:OptimizedPolicy)\n- Do not use this episode to update or tune the policy. It provides no signal for the objective (maximize x during x-velocity>0) and no data on servo travel tradeoffs.\n- Exclude or flag single-sample / zero-motion episodes from training/optimization and prioritize episodes with sustained positive x-velocity and non-trivial servo-angle time series.\n\nQuick actionable checks\n- Verify dataset collection: ensure timestamps and sampling produced multi-sample episodes with measurable x velocity.\n- If many episodes look like this, inspect sensor/recording pipeline for a malfunction (stopped logging, timestamp issues, or coordinate/velocity computation bug).\n\nIf you want, I can scan additional episodes or provide a shortlist of patterns (servo sequences) to prefer/avoid based on multi"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:54.966587Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n\n- Episode is effectively useless for the stated objective:\n  - sample_count = 2, positive_velocity_sample_count = 0 \u2192 no time with x velocity > 0 to evaluate reward.\n  - positive_velocity_x_gain = 0.0 and max_x_during_positive_velocity = 0.0.\n- Servo behavior:\n  - servo_angle_rad was constant at 0.24473511171432874 (absolute_angle_travel = 0.0).\n  - That constant angle minimizes angle travel (good as a secondary objective), but produced no forward (positive-x) motion.\n\nUseful servo patterns (from this episode)\n- Holding a constant servo angle yields zero angle travel (meets the secondary objective). If a similar constant produced positive-x motion in other episodes it would be useful; here it produced no forward progress.\n\nHarmful patterns (from this episode)\n- No explicit harmful servo oscillation or large travel observed. The episode does show that the chosen constant angle did not generate positive x velocity \u2014 so it is ineffective for the primary objective.\n\nRecommendation re: OptimizedPolicy (src/policy_controller/policy.py:OptimizedPolicy)\n- Do NOT update the policy from this episode. It contains no positive-x data and provides no signal for improving the primary objective.\n- Mark or ignore episodes with positive_velocity_sample_count == 0 when computing policy updates; they can bias training toward minimizing angle travel without improving forward performance.\n- Suggestion:"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:56.622848Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary\n- This episode contains only a single sample (no time-differenced velocities), so it provides no information about positive-x-velocity behavior or policy-effect dynamics.\n- Metrics: positive_velocity_sample_count = 0, max_x_during_positive_velocity = 0, positive_velocity_x_gain = 0, absolute_angle_travel = 0 \u2192 nothing to learn for the stated objective.\n\nUseful servo patterns\n- None extractable from this episode. With only one timestamp there is no change in servo angle or velocity to analyze.\n\nHarmful / suspicious patterns\n- Single recorded servo_angle_rad = 2.4479 rad (\u2248140.4\u00b0). While travel = 0 in this episode, such a large static angle could be undesirable if it reflects the policy output in other episodes (risk of saturating or pointing away from forward motion).\n- The episode\u2019s lack of temporal sampling is itself harmful for learning/optimization (no velocity or cause\u2013effect signal).\n\nRecommendation for src/policy_controller/policy.py:OptimizedPolicy\n- Do NOT use this episode to update OptimizedPolicy. It contains no dynamic information relevant to maximizing x during positive-x-velocity periods or minimizing angle travel.\n- Add filtering in the training/optimization pipeline to ignore episodes with:\n  - fewer than 2 samples, or\n  - zero samples where x velocity > 0 (or where"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:08.131387Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "",
+            "error": "Request timed out."
+        },
+        {
+            "path": "episodes/2026-05-30T21:28:41.247688Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary recommendation\n- Do NOT use this episode to update src/policy_controller/policy.py:OptimizedPolicy. It contains zero samples with x-velocity > 0 (positive_velocity_sample_count = 0), so provides no signal for the primary objective and would bias the policy toward behaviors that do not increase x.\n\nHigh-level episode facts (for quick reference)\n- sample_count: 35\n- positive_velocity_sample_count: 0\n- max_x_during_positive_velocity: 0.0\n- positive_velocity_x_gain: 0.0\n- absolute_angle_travel: 0.98335 rad\n- score: -0.09833\n\nUseful servo patterns (with caveats)\n- Long-duration constant-angle holds reduce servo motion cost: the policy held servo_angle_rad \ufffd"
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:52.166190Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary conclusion\n- This episode contains zero positive-x-velocity samples (positive_velocity_sample_count = 0), so it provides no data relevant to the primary objective (maximizing x while x-velocity > 0). It should not be used to update the OptimizedPolicy for the primary objective.\n\nKey observations from the CSV\n- Servo timeline (rad):\n  - 0\u2013~196 ms: constant at 1.46603\n  - ~232\u2013"
+        },
+        {
+            "path": "episodes/2026-05-30T21:35:27.307091Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary\n- This episode contains no intervals with positive x velocity (positive_velocity_sample_count = 0). Therefore it provides no information on actions that increase x during forward-moving periods.\n- Primary objective (maximize x during x-velocity > 0): episode is irrelevant.\n- Secondary objective (minimize absolute servo travel): episode shows unnecessarily large servo movement (absolute_angle_travel = 1.589 rad), so it is useful only for the secondary objective.\n\nObserved servo patterns\n- Stable holding at ~1.7571 rad for the first ~15 samples (timestamps 0 \u2192 431006966).\n  - Benefit: no travel while held; consistent servo = low local travel.\n- Sudden"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:06.692513Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:32:47.689278Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary conclusion\n- This episode contains zero positive-x-velocity samples (positive_velocity_sample_count = 0). It therefore provides no direct information about actions that increase x while x-velocity > 0.\n- Recommendation: do NOT use this episode to update OptimizedPolicy in src/policy_controller/policy.py \u2014 it is uninformative (and potentially"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:27.835620Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary verdict\n- This episode should NOT be used to update OptimizedPolicy for the primary objective (maximizing x during positive-x-velocity periods). There are zero samples with x velocity > 0, so it contains no positive-phase signal (positive_velocity_sample_count = 0, positive_velocity_x_gain = 0).\n- It can be used only cautiously as a negative example for the secondary objective (minimizing absolute servo travel), not for learning how to exploit forward-motion phases.\n\nEpisode-level findings\n- No forward-motion data: x decreases monotonically across all 36 samples; max_x_during_positive_velocity = 0 and positive_velocity_sample_count = 0. The episode provides no information about actions that improve x when x velocity > 0.\n- Servo travel: total absolute_angle_travel = 2."
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:34.550784Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary\n- This episode contains no positive-x-velocity samples (positive_velocity_sample_count = 0). All x values steadily decrease (\u22480.991 \u2192 0.025), so there is no evidence of actions that increase x.\n- Because the primary objective only cares about behavior during positive-x-velocity periods, this"
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:46.127981Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Short summary\n- During this episode forward progress (x-velocity > 0) occurs only in the final segment when the servo is held around 1.832986 rad; that segment produced small positive x gain (positive_velocity_x_gain = 0.00816, max_x_during_positive_velocity"
+        },
+        {
+            "path": "episodes/2026-05-30T21:34:49.377957Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:37.272048Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary judgment\n- This episode should NOT influence src/policy_controller/policy"
+        },
+        {
+            "path": "episodes/2026-05-30T21:37:06.923361Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:15.177064Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary findings (concise)\n\nKey facts\n- No positive-x phase: positive_velocity_sample_count = 0, positive_velocity_x_gain = 0.0. The episode contains only negative or zero x velocity samples, so the primary objective (maximize x during x-velocity > 0) is not testable here.\n- Servo behavior: three stable plateaus in this excerpt:\n  - ~0\u2013~0.43 s: servo_angle \u2248 0.7894 rad (constant)\n  - ~0.43\u2013~0.93 s: servo_angle \u2248 1.7259 rad (constant)\n  - ~0.93 s onward: servo_angle \u2248 0.07143 rad (constant)\n  These plateaus produce two relatively large step changes (0.7894 \u2192 1.725"
+        },
+        {
+            "path": "episodes/2026-05-30T21:29:11.865261Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:05.691828Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (episode metrics)\n- sample_count: 146; positive_velocity_sample_count: 53 (36%)\n- max_x during positive-velocity periods: 0.4403\n- positive-velocity x gain: 0.2421\n- total absolute servo_angle_rad"
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:54.471119Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary\n- This episode contains zero samples with x-velocity > 0, so it provides no direct signal about how actions affect the primary objective (maximizing x during forward motion).\n- The servo executed two large abrupt moves (\u22480.5066 \u2192 3.1014, then 3.1014 \u2192 1.0676) producing a large total travel (4.62865 rad) and a negative"
+        },
+        {
+            "path": "episodes/2026-05-30T21:33:49.811855Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary conclusion\n- This episode should NOT be used to update OptimizedPolicy. It contains zero positive-x-velocity samples (positive_velocity_sample_count=0), so it provides no on-policy signal for the primary objective (maximize x when x velocity > 0). Its only informative content would be that large servo motion is costly, but that is better learned from episodes that also show positive-x reward.\n\nUseful servo patterns observed\n- Long holds at a single angle: servo_angle_rad = 0.707 for the first ~466 ms, then 2.938 for the next"
+        },
+        {
+            "path": "episodes/2026-05-30T21:32:03.411213Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Findings (concise)\n\nSummary metrics\n- sample_count 83; positive_velocity_sample_count 13 (sparse)."
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:15.083323Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n- Positive-x motion coincides with servo held near 0.659 rad (and briefly near 3.061 rad). Most positive-velocity samples (28) appear after the"
+        },
+        {
+            "path": "episodes/2026-05-30T21:31:29.902655Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "Summary (concise)\n\nKey facts\n-"
+        },
+        {
+            "path": "episodes/2026-05-30T21:36:13.505265Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        },
+        {
+            "path": "episodes/2026-05-30T21:28:58.963488Z.csv",
+            "model": "gpt-5-mini",
+            "finding": "No finding returned by worker model."
+        }
+    ],
+    "synthesis": "Recommended OptimizedPolicy behavior (to implement in src/policy_controller/policy.py:OptimizedPolicy)\n\nHigh-level summary\n- Primary rule: do not move the servo while the agent is making forward progress (x_velocity > 0).\n- Only change servo angle when forward progress has stalled or is negative for a short, persistent window.\n- When changing, pick a modest target angle known to frequently correlate with positive-x motion (fallback \u2248 2.4 rad) and move slowly in bounded steps to avoid large absolute travel.\n- Prefer holding previously successful plateau angles when available (re-use the last angle that produced sustained x_velocity > 0).\n- Add simple hysteresis/filters to avoid oscillation and unnecessary micro-movements.\n\nConcrete policy (pseudocode to implement inside OptimizedPolicy.step or .action):\n\nState kept in policy object:\n- last_servo_angle (float)\n- last_successful_angle (float or None) \u2014 the last angle held while x_velocity > 0 for >= success_len\n- consecutive_nonforward_count (int)\n- consecutive_forward_count (int)\n- last_change_time or last_change_step (optional for extra damping)\n\nConfiguration constants (suggested defaults; tune later):\n- SUCCESS_LEN = 3           # consecutive samples with x_velocity > 0 required to mark an angle successful\n- NONFORWARD_THRESHOLD = 3 # consecutive samples with x_velocity <= 0 before initiating a change\n- MAX_STEP = 0.20          # max servo angle change per control step (radians) to limit absolute travel\n- TARGET_FALLBACK = 2.40   # default target angle if no successful angle recorded (radians)\n- MIN_CHANGE_MAG = 0.01    # ignore very small adjustments\n\nPer-step logic:\n1. Read x_velocity and last_servo_angle (current commanded angle).\n2. If x_velocity > 0:\n   - consecutive_forward_count += 1\n   - consecutive_nonforward_count = 0\n   - If consecutive_forward_count >= SUCCESS_LEN:\n       - last_successful_angle = last_servo_angle\n   - Action: return last_servo_angle (hold; do not change)\n3. Else (x_velocity <= 0):\n   - consecutive_nonforward_count += 1\n   - consecutive_forward_count = 0\n   - If consecutive_nonforward_count < NONFORWARD_THRESHOLD:\n       - Action: return last_servo_angle (wait; avoid reacting to brief dips)\n   - Else (persistent non-forward):\n       - Determine desired_target:\n           - If last_successful_angle is not None: desired_target = last_successful_angle\n           - Else: desired_target = TARGET_FALLBACK\n       - Compute delta = desired_target - last_servo_angle\n       - If abs(delta) < MIN_CHANGE_MAG:\n           - Action: return last_servo_angle (no practical change)\n       - Else:\n           - step = clamp(delta, -MAX_STEP, +MAX_STEP)\n           - new_angle = last_servo_angle + step\n           - record last_change_step/time, update last_servo_angle = new_angle\n           - Action: return new_angle\n\nAdditional notes / rationale\n- Holding servo when x_velocity > 0 was repeatedly observed as an effective, low-travel strategy across many episodes; it both preserves forward progress and minimizes the secondary cost (absolute travel).\n- Only changing after a short sustained stall avoids reacting to momentary reversals and prevents oscillatory movement which was observed as harmful.\n- Using last_successful_angle reuses empirically beneficial plateau angles",
+    "error": null
+}
