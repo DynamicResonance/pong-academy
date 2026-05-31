@@ -1,0 +1,87 @@
+{
+  "solution": {
+    "name": "Pong Academy",
+    "one_liner": "An agentic, self-improving robotics calibration loop: a frozen evaluator scores real-world episodes while an AI coding agent (Karpathy's Autoresearch contract) rewrites the action policy, tests the physical shot, keeps if score improves, rolls back if not.",
+    "architecture": [
+      "Local rig: webcam + ball-hitting servo + on-laptop detector extracting spatial coordinates in real time.",
+      "Controller: receives live coordinates over Wi-Fi, commands the servo to intercept the ball.",
+      "Episode Manager + MCP server: segments camera stream into discrete measurable episodes (inputs: coords/angles; output: scored or not), exposed to the cloud via MCP.",
+      "Policy Optimizer (the Autoresearch loop): cloud agent queries episode history, objective = maximize score; evaluation frozen, agent free to rewrite the action policy; propose -> test physical shot -> check score -> commit if better else rollback."
+    ],
+    "benefits": [
+      "Last-mile efficiency: masters the specific physics of a rig in hundreds-to-thousands of high-signal attempts instead of billions of random ones.",
+      "Hyper-adaptability: auto fine-tunes to real-world imperfections (wonky camera angles, bent rigs, changing environments) with no human tuning.",
+      "Autonomous overnight operation: write the goal in a markdown file, point the agent at the problem, let it run loops."
+    ],
+    "moat_logic": "Treats physical robotic actions as an optimization problem an AI coding agent solves autonomously; the proprietary asset is the high-signal episode dataset + the calibration policies the loop discovers per environment (a data + workflow flywheel), not 'we use AI'.",
+    "sota_comparison": "vs Google Arm Farm (millions/billions of blind physical runs, dark factories of arms) and Hello Robot Stretch (low-cost roving general data): Pong Academy is ~10k intelligent optimized runs, extremely high-signal, very low resource cost (single rig + API compute)."
+  },
+  "founders": {
+    "aleh": {
+      "role": "Founding GTM / Product / commercial operator, AI-native",
+      "facts": [
+        "7-time founder, 2 exits, $10M+ raised, 10+ patents (coverage through 2041), Techstars & SOSV alum.",
+        "$0 -> $5M revenue bootstrapped at 100%FOOD (1,000,000+ servings).",
+        "$0 -> $6M bootstrapped at MOBYS Group, managed 150 people.",
+        "AB InBev: closed strategic investment + global supply agreement at Planetarians.",
+        "Validated unit economics $0.42/lb COGS, $3.35M CapEx at commercial scale (Hayward, CA).",
+        "Ships paying-customer products in days with Claude Code / Codex: AI Customs = paying design partner (CDEK franchisee) + 2 live products in 6 weeks, $1.8K MRR, customer requested full legacy replacement.",
+        "Nash Compass PMF: 78.7% install conversion, 73% data uploads, 55.6% post-result registrations across 202 users (all ~3x industry benchmark).",
+        "Agent Risk Score: 86% CEO buy-in at Techstars validation, 1 LOI signed, Munich Re dialogue initiated.",
+        "Quantitative PMF discipline: designs tests with benchmarked go/no-go gates and decision rules (Mastermind Handshake).",
+        "Closes first 5-10 enterprise/design-partner customers from cold (AB InBev, CDEK, Aeroflot, Google).",
+        "2-4x sales velocity vs category at Planetarians; 72% acceptance in schools & foodservice.",
+        "Deep-tech commercialization: translates complex R&D (AI, climate tech, bioprocesses) into fundable unit economics and defensible IP.",
+        "Currently Chief of Staff at Dynamic Resonance AI; deep on MCP / agentic-internet / protocol-driven thesis; builds vertical MCP wedges (e.g. MCP-as-a-Service for local service businesses)."
+      ]
+    },
+    "edward": {
+      "role": "Robotics & Perception Engineer",
+      "facts": [
+        "MS Robotic Systems Development, Carnegie Mellon University (2017-2018).",
+        "BE Aeronautical Engineering, University of Sydney.",
+        "Senior Perception Engineer at Andromeda (2026-present).",
+        "Perception Engineer at Saronic Technologies (2025-2026, autonomous maritime/defense).",
+        "Robotics Research Engineer at L5 Automation (2021-2024).",
+        "Robotics Research Engineer at KEF Robotics (2020-2021).",
+        "Robotics Engineer at NASA Jet Propulsion Laboratory (2019-2020).",
+        "Robotics intern at Aurora Flight Sciences; engineering intern at SpinLaunch; design engineer/stress analyst at Boeing Aerostructures Australia.",
+        "Core expertise: real-world perception, sensor fusion, robotics research engineering across defense, space, and automation."
+      ]
+    },
+    "team_edge": "A rare GTM+perception pair: Aleh closes design partners and runs quantified PMF gates in days; Ed builds the perception/robotics core that makes the calibration loop real. Direct lived experience on both the commercial and the sim-to-real sides."
+  },
+  "rfps": {
+    "note": "Reputable third-party demand pull standing in for customer tests. Cite the specific RFP that matches each wedge.",
+    "items": [
+      {"id": "YC-S26-1", "title": "AI for Low-Pesticide Agriculture (Garry Tan)", "signal": "AI now IDs individual weeds/pests in real time; robotics can treat one plant; target cut pesticide 90%; Synphony cites strawberries = $3B in California alone, 60% labor cost = 'generational company'."},
+      {"id": "YC-S26-5", "title": "Counter-Swarm Defense (Tyler Bosmeny)", "signal": "Patriot $3M vs FPV drone $500; wants interceptors, sensor-fusion, attacks on the autonomy stack; winners look like Cloudflare not Raytheon."},
+      {"id": "YC-S26-8", "title": "Hardware Supply Chain (Nicolas Dessaigne)", "signal": "Shenzhen design->part in a day, US takes weeks; wants dramatically faster parts, tight design/manufacturing/logistics integration."},
+      {"id": "YC-S26-10", "title": "Inference Chips for Agent Workflows (Diana Hu)", "signal": "GPUs hit 30-40% utilization on bursty agent workloads; NVIDIA bought Groq for $20B."},
+      {"id": "YC-S26-14", "title": "Supply Chain 2.0 for Semiconductors (Diana Hu)", "signal": "1,400 process steps, dozen countries, 5 months; in 2021 a $300 chip held up $210B of vehicles."},
+      {"id": "a16z-AD-industrial", "title": "AI-native industrial base (David Ulevitch)", "signal": "Robotics-heavy manufacturing, next-gen mining, AI coordinating fleets of autonomous machines."},
+      {"id": "a16z-AD-factory", "title": "Renaissance of the American factory (Erin Price-Wright)", "signal": "Factory mindset on energy/mining/construction/manufacturing; modular AI+autonomy alongside skilled workers; deploy autonomy for dangerous tasks; speed design cycles with design-for-manufacture."},
+      {"id": "a16z-AD-observability", "title": "Physical observability (Zabie Elmgren)", "signal": "1B+ networked cameras/sensors; wants privacy-preserving interoperable AI-native systems that render the physical world as observable as code; enabling layer for robotics/autonomy."},
+      {"id": "a16z-AD-electroindustrial", "title": "Electro-industrial stack (Ryan McEntush)", "signal": "Minerals->components, energy->batteries, motion->precision motors, coordinated by software (EVs, drones, datacenters, manufacturing)."},
+      {"id": "a16z-AD-autonomous-labs", "title": "Autonomous labs (Oliver Hsu)", "signal": "As robotic manipulation improves, lights-out labs close the loop from hypothesis to experiment execution. DIRECTLY relevant to an autoresearch product."},
+      {"id": "a16z-AD-data-crusade", "title": "Data crusade in critical industries (Will Bitsky)", "signal": "2026 defined by data constraints; each truck roll/meter read/production run is training fodder; opening = the coordination stack: collection/annotation/consent, sensor hardware+SDKs, RL environments and training pipelines, eventually intelligent machines."}
+    ]
+  },
+  "antler_thresholds": {
+    "discovery_interviews": {"weak": "<10", "minimum": "20-30", "strong": "50+"},
+    "icp_specificity": {"weak": "generic persona", "minimum": "one role / use case", "strong": "role + trigger + budget owner"},
+    "design_partners": {"weak": 0, "minimum": "2-3", "strong": "5+"},
+    "lois": {"weak": 0, "minimum": "1-2", "strong": "3+"},
+    "paid_customers": {"weak": 0, "minimum": 1, "strong": "3-10"},
+    "waitlist": {"weak": "<100", "minimum": "500+", "strong": "2000+ or 20%+ weekly growth"},
+    "prototype": {"weak": "none", "minimum": "clickable / concierge demo", "strong": "working MVP with usage"},
+    "differentiation": {"weak": "AI wrapper", "minimum": "workflow-specific advantage", "strong": "data/protocol/distribution moat"},
+    "market_size": {"weak": "big market claim", "minimum": "$100M+ beachhead", "strong": "$1B+ expansion path"}
+  },
+  "seed_ideas_reference": [
+    "Industrial last-mile calibration: arms self-calibrate to a factory station (lighting/vibration/2mm fixture shifts) in ~30 min, write their own micro-adjustments to 99.99% success.",
+    "Adaptive sports training tech: smart ball machines (tennis/table tennis/batting) that learn the environment and player, self-correct aim. Direct translation of the existing rig.",
+    "Precision agriculture: fruit-picking / weed-zapping robots that adapt actuation timing + camera angles per orchard over first ~100 attempts.",
+    "Smart-home appliance personalization: teach-by-doing household robots that learn one user's quirky kitchen layout ('every mom makes the salad differently')."
+  ]
+}

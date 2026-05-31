@@ -1,0 +1,15 @@
+# Secrets — never commit
+.env.local
+.env
+*.key
+
+# Tooling / local state
+.gstack/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Raw source videos (large). The compressed engine/assets/Demo_web.mp4 used to
+# build the page IS committed; these full-resolution originals are not.
+*.MOV
+*.mov

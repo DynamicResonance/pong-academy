@@ -1,0 +1,2439 @@
+{
+  "meta": {
+    "generated": "2026-05-30T14:06:18",
+    "frozen_evaluator_sha256": "79fdec1b59227de42aa6c51738646c62e9e69259b19c4a79766cc27e3e3dde04",
+    "proposer_model": "claude-sonnet-4-20250514",
+    "n_loops": 10,
+    "weights": {
+      "c1_painful_problem": 15,
+      "c2_specific_wedge": 12,
+      "c3_founder_market_fit": 15,
+      "c4_evidence_of_demand": 18,
+      "c5_mvp_feasibility": 10,
+      "c6_market_expansion": 10,
+      "c7_differentiation": 8,
+      "c8_business_model": 6,
+      "c9_timing_whynow": 4,
+      "c10_story_clarity": 2
+    },
+    "criteria_labels": {
+      "c1_painful_problem": "Painful problem in narrow beachhead",
+      "c2_specific_wedge": "Specific wedge, not generic TAM",
+      "c3_founder_market_fit": "Founder-market fit",
+      "c4_evidence_of_demand": "Evidence of demand",
+      "c5_mvp_feasibility": "Product proof / MVP feasibility",
+      "c6_market_expansion": "Market size + expansion path",
+      "c7_differentiation": "Differentiation / defensibility",
+      "c8_business_model": "Business model + unit economics",
+      "c9_timing_whynow": "Timing / market trend",
+      "c10_story_clarity": "Fundraise readiness / story clarity"
+    },
+    "contract": "Karpathy autoresearch: frozen evaluator + mutable policy (wedge) + propose->score->keep/rollback"
+  },
+  "loops": [
+    {
+      "id": "w01",
+      "loop": 1,
+      "kind": "seed",
+      "parent": null,
+      "name": "Industrial Robot Self-Calibration Module",
+      "mutation": "seed: direct B2B application of Pong Academy's core loop to industrial automation",
+      "today_score": 60.4,
+      "projected_score": 86.2,
+      "delta_vs_parent": null,
+      "status": "baseline-keep",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Strong Antler-fundable wedge",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-factory Renaissance of the American factory",
+      "tokens": {
+        "input_tokens": 4941,
+        "output_tokens": 1014
+      }
+    },
+    {
+      "id": "w02",
+      "loop": 2,
+      "kind": "seed",
+      "parent": null,
+      "name": "OrchardBot Calibration Loop",
+      "mutation": "seed: precision-ag actuation calibration for weed-zapping/fruit-picking robots per orchard",
+      "today_score": 51.8,
+      "projected_score": 75.3,
+      "delta_vs_parent": null,
+      "status": "discard-rollback",
+      "band_today": "Not fundable yet",
+      "band_projected": "Potentially fundable; needs sharper proof or story",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "YC-S26-1 AI for Low-Pesticide Agriculture",
+      "tokens": {
+        "input_tokens": 4943,
+        "output_tokens": 1036
+      }
+    },
+    {
+      "id": "w03",
+      "loop": 3,
+      "kind": "seed",
+      "parent": null,
+      "name": "LabBot Precision Calibration Loop",
+      "mutation": "seed: a16z autonomous labs RFP - direct autoresearch application",
+      "today_score": 56.4,
+      "projected_score": 82.2,
+      "delta_vs_parent": null,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Potentially fundable; needs sharper proof or story",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-autonomous-labs",
+      "tokens": {
+        "input_tokens": 4955,
+        "output_tokens": 889
+      }
+    },
+    {
+      "id": "w04",
+      "loop": 4,
+      "kind": "seed",
+      "parent": null,
+      "name": "Interceptor Aim Calibration Loop",
+      "mutation": "seed: YC S26 Counter-Swarm Defense RFP + Ed's Saronic defense perception background",
+      "today_score": 60.5,
+      "projected_score": 78.0,
+      "delta_vs_parent": null,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Potentially fundable; needs sharper proof or story",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "YC-S26-5 Counter-Swarm Defense",
+      "tokens": {
+        "input_tokens": 5001,
+        "output_tokens": 983
+      }
+    },
+    {
+      "id": "w05",
+      "loop": 5,
+      "kind": "seed",
+      "parent": null,
+      "name": "RoboLoop Calibration Infrastructure",
+      "mutation": "seed: targeting the 'data crusade' coordination stack - selling the autoresearch calibration loop itself as B2B infra",
+      "today_score": 61.6,
+      "projected_score": 88.3,
+      "delta_vs_parent": null,
+      "status": "keep",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Strong Antler-fundable wedge",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-data-crusade: Data crusade in critical industries",
+      "tokens": {
+        "input_tokens": 5034,
+        "output_tokens": 1071
+      }
+    },
+    {
+      "id": "w06",
+      "loop": 6,
+      "kind": "seed",
+      "parent": null,
+      "name": "LineBot Commissioning Loop",
+      "mutation": "seed: YC S26 #8 Hardware Supply Chain + a16z factory renaissance demands",
+      "today_score": 56.4,
+      "projected_score": 83.1,
+      "delta_vs_parent": null,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Potentially fundable; needs sharper proof or story",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "YC-S26-8 Hardware Supply Chain + a16z-AD-factory",
+      "tokens": {
+        "input_tokens": 5052,
+        "output_tokens": 1028
+      }
+    },
+    {
+      "id": "w07",
+      "loop": 7,
+      "kind": "mutate",
+      "parent": "w05",
+      "name": "RoboCell Commissioning AutoLoop",
+      "mutation": "Sharpened ICP from generic 'robotics companies' to Manufacturing Engineering Managers commissioning new robot cells in automotive/electronics production lines - the exact buyer who budgets $50K-200K per cell commissioning project",
+      "today_score": 61.6,
+      "projected_score": 88.3,
+      "delta_vs_parent": 0.0,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Strong Antler-fundable wedge",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-factory: Renaissance of the American factory",
+      "tokens": {
+        "input_tokens": 7759,
+        "output_tokens": 1151
+      }
+    },
+    {
+      "id": "w08",
+      "loop": 8,
+      "kind": "mutate",
+      "parent": "w05",
+      "name": "RoboIntegrator OEM Calibration Stack",
+      "mutation": "strengthened defensibility via OEM/integrator distribution channel + per-environment episode dataset monopoly; shifted from direct robotics company sales to B2B2B through integrators",
+      "today_score": 61.6,
+      "projected_score": 88.3,
+      "delta_vs_parent": 0.0,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Strong Antler-fundable wedge",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-data-crusade: Data crusade in critical industries",
+      "tokens": {
+        "input_tokens": 7794,
+        "output_tokens": 1104
+      }
+    },
+    {
+      "id": "w09",
+      "loop": 9,
+      "kind": "mutate",
+      "parent": "w05",
+      "name": "Industrial Robocell Commissioning Loop",
+      "mutation": "narrowed from generic robotics infra to specific industrial robot cell commissioning - the $2B systems integrator bottleneck with measurable 48-hour commissioning cycles",
+      "today_score": 61.6,
+      "projected_score": 86.8,
+      "delta_vs_parent": -1.5,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Strong Antler-fundable wedge",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-factory: Renaissance of the American factory",
+      "tokens": {
+        "input_tokens": 7833,
+        "output_tokens": 1083
+      }
+    },
+    {
+      "id": "w10",
+      "loop": 10,
+      "kind": "mutate",
+      "parent": "w05",
+      "name": "Industrial RoboCell Self-Commissioning Stack",
+      "mutation": "recombine: grafted RoboLoop's sharp robotics-infra ICP with Industrial Robot's proven $1B+ factory automation adjacency map",
+      "today_score": 61.6,
+      "projected_score": 88.3,
+      "delta_vs_parent": 0.0,
+      "status": "discard-rollback",
+      "band_today": "Interesting but under-validated",
+      "band_projected": "Strong Antler-fundable wedge",
+      "gates_at_risk_today": [
+        "G2_problem_solution_fit",
+        "G3_validation_beyond_vision"
+      ],
+      "rfp_match": "a16z-AD-factory: Renaissance of the American factory",
+      "tokens": {
+        "input_tokens": 7869,
+        "output_tokens": 1096
+      }
+    }
+  ],
+  "wedges": [
+    {
+      "name": "Industrial Robot Self-Calibration Module",
+      "family": "robot-cell-commissioning",
+      "tagline": "Autonomous calibration system that teaches industrial robot arms to self-tune to factory stations in 30 minutes instead of 8 hours of human engineering.",
+      "mutation": "seed: direct B2B application of Pong Academy's core loop to industrial automation",
+      "icp": "Automation Engineers at mid-sized manufacturers ($50M-$500M revenue) running 10-100 robot cells who lose 2-4 production hours per week to recalibration after fixture changes, lighting shifts, or vibration drift",
+      "problem": "Robot arms lose precision after environmental changes (lighting, vibration, 2mm fixture shifts) requiring expensive human recalibration that stops production for 4-8 hours per incident, happening 2-3x per month per cell",
+      "why_now": "Manufacturing reshoring + labor shortage + AI perception breakthrough makes autonomous calibration economically critical; perception models now reliable enough for industrial precision",
+      "demand_evidence": "a16z-AD-factory 'Renaissance of the American factory' specifically calls for AI+autonomy to speed design cycles with design-for-manufacture and deploy autonomy for precision tasks",
+      "mvp_plan": "Partner with 2-3 manufacturers to install Pong Academy's perception+servo loop on existing robot cells; demonstrate 30-minute autonomous recalibration vs 4-8 hour human process; measure precision recovery and uptime improvement",
+      "market_expansion": "$200M beachhead (10K+ robot cells in US mid-market manufacturing) expanding to $2B+ (robotic welding, assembly, packaging across automotive, electronics, food processing globally)",
+      "defensibility": "High-signal episode dataset per factory environment + learned calibration policies create compound advantage; each deployment improves the universal calibration model while building customer-specific optimization moats",
+      "business_model": "Manufacturing automation integrators pay $15K-$25K per robot cell for calibration module + $2K annual software subscription; 60% gross margin; sell through existing automation partners who have customer relationships",
+      "experiment_4wk": "Install prototype on 3 partner robot cells, demonstrate autonomous recalibration after simulated environmental changes, measure precision recovery time vs manual baseline",
+      "go_no_go": ">=30% faster calibration time with >=95% precision recovery on partner rigs in <=300 episodes",
+      "why_pitch_antler": "Perfect founder-market fit: Ed's robotics perception expertise from L5 Automation + Saronic directly applies, while Aleh's enterprise B2B sales record (AB InBev, CDEK) maps to automation buyer motion. Clear $200M+ beachhead with defensible episode data flywheel.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed has direct robotics research engineering at L5 Automation, KEF Robotics, and NASA JPL with real-world perception expertise. Aleh closed AB InBev strategic investment and has enterprise B2B track record with technical products.",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-factory Renaissance of the American factory",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 1,
+          "problem_intensity_justification": "Manufacturing loses production time to robot recalibration multiple times per month - this is budgeted downtime with clear ROI calculation",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 3,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 1,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w01",
+      "kind": "seed",
+      "parent": null,
+      "loop": 1,
+      "scores": {
+        "today_score": 60.4,
+        "projected_score": 86.2,
+        "today": {
+          "total": 60.4,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.51,
+              "points": 3.06
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 86.2,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.65,
+              "points": 3.9
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Strong Antler-fundable wedge"
+      },
+      "norm_family": "industrial-arms"
+    },
+    {
+      "name": "OrchardBot Calibration Loop",
+      "family": "precision-ag",
+      "tagline": "Self-tuning actuation calibration for agricultural robots that adapt to each farm's unique conditions in real-time.",
+      "mutation": "seed: precision-ag actuation calibration for weed-zapping/fruit-picking robots per orchard",
+      "icp": "Head of Agricultural Operations at mid-scale farms (500-2000 acres) running robotic weed control or selective harvesting systems, triggered by poor robot success rates in new field conditions, controls $200K+ annual equipment budgets",
+      "problem": "Agricultural robots achieve 60-80% success rates in lab conditions but drop to 30-50% in real orchards due to lighting variations, plant growth differences, and terrain irregularities - requiring expensive manual recalibration by robotics engineers for each new field deployment",
+      "why_now": "Precision agriculture robots are finally cost-effective enough for mid-scale deployment, but the sim-to-real gap is the last bottleneck preventing widespread adoption beyond research farms",
+      "demand_evidence": "YC-S26-1 AI for Low-Pesticide Agriculture: Garry Tan specifically calls out strawberries as $3B market in California alone with 60% labor costs, targeting 90% pesticide reduction through AI+robotics treating individual plants",
+      "mvp_plan": "Partner with 2-3 farms already using robotic weed zappers or fruit pickers; deploy Pong Academy's calibration loop on their existing rigs to auto-tune actuation timing and camera angles over 100-300 field episodes per deployment",
+      "market_expansion": "$200M beachhead in robotic weed control systems expanding to $2B+ precision agriculture market including selective harvesting, targeted spraying, and pruning automation across all specialty crops",
+      "defensibility": "Farm-specific calibration datasets become proprietary per deployment; the autoresearch loop discovers optimal policies for each orchard's unique conditions that competitors cannot replicate without running the same episode count",
+      "business_model": "Robotic OEMs pay $15-25K annual software license per deployed robot; 40% gross margins on SaaS model; acquire customers through direct partnerships with existing ag-robotics manufacturers; expand via multi-robot fleet management",
+      "experiment_4wk": "Deploy calibration loop on 2 partner farms' existing weed-zapping robots, measure success rate improvement over 200 episodes per farm versus baseline manual calibration",
+      "go_no_go": ">=30% relative success-rate improvement on partner rigs within 300 episodes compared to manual calibration baseline",
+      "why_pitch_antler": "Precision agriculture is a proven $15B+ market with clear robotic adoption momentum but constrained by calibration bottlenecks that manual engineering cannot scale to solve. The autoresearch approach directly addresses the core blocker preventing ag-robotics from reaching mainstream farm deployment.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 1,
+          "icp_specificity": 2,
+          "founder_fit": 1,
+          "founder_fit_justification": "Ed has robotics research engineering at NASA JPL and perception expertise at defense/automation companies, but neither founder has direct agricultural domain experience or farm sales channels",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "YC-S26-1 AI for Low-Pesticide Agriculture",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 1,
+          "problem_intensity_justification": "Implied by YC RFP demand for 90% pesticide reduction through robotic individual plant treatment, but no direct evidence of current calibration budgets",
+          "buyer_already_spends": false,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 2,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 1,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w02",
+      "kind": "seed",
+      "parent": null,
+      "loop": 2,
+      "scores": {
+        "today_score": 51.8,
+        "projected_score": 75.3,
+        "today": {
+          "total": 51.8,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.328,
+              "points": 4.91
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 0.65,
+              "points": 9.75
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.51,
+              "points": 3.06
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 75.3,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.642,
+              "points": 9.64
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 0.65,
+              "points": 9.75
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.57,
+              "points": 10.26
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.65,
+              "points": 3.9
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Not fundable yet",
+        "band_projected": "Potentially fundable; needs sharper proof or story"
+      },
+      "norm_family": "precision-ag"
+    },
+    {
+      "name": "LabBot Precision Calibration Loop",
+      "family": "autonomous-labs",
+      "tagline": "Robotic lab instruments self-tune per protocol for lights-out operation.",
+      "mutation": "seed: a16z autonomous labs RFP - direct autoresearch application",
+      "icp": "Lab automation engineers at pharma/biotech running 24/7 robotic protocols with >$500K automation budgets",
+      "problem": "Robotic pipettes/dispensers drift overnight requiring manual recalibration every 8-12 hours, blocking lights-out operation and wasting $200K+ annual tech time",
+      "why_now": "AI lab protocols now generate thousands of experiments daily requiring 24/7 robotic execution; manual calibration is the bottleneck to full automation",
+      "demand_evidence": "a16z-AD-autonomous-labs: 'As robotic manipulation improves, lights-out labs close the loop from hypothesis to experiment execution. DIRECTLY relevant to an autoresearch product.'",
+      "mvp_plan": "Partner with 2-3 pharma labs: instrument their existing liquid handlers with vision feedback, run 100-episode calibration loops on pipette accuracy, demonstrate 8x longer uptime between manual interventions",
+      "market_expansion": "$300M beachhead (lab automation at top 500 pharma/biotech); $2B+ expansion (academic research, clinical labs, food testing, semiconductor fabs)",
+      "defensibility": "Episode dataset of instrument-specific drift patterns + calibration policies per lab environment creates data moat; workflow integration makes switching costly",
+      "business_model": "Lab pays $50K annual license per robotic workstation + $10K setup; 80% gross margin; sell through existing lab automation VARs; expand to multi-instrument orchestration",
+      "experiment_4wk": "Partner with 1 pharma lab, instrument their Hamilton liquid handler, run 200 calibration episodes, measure uptime extension vs baseline",
+      "go_no_go": ">=4x uptime extension (32+ hour continuous operation vs 8-hour baseline) in <=200 episodes",
+      "why_pitch_antler": "Direct match to a16z autonomous labs thesis with immediate pharma demand. Clear technical proof point unlocks massive lab efficiency gains.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 1,
+          "founder_fit_justification": "Ed: robotics research engineering at NASA JPL + perception systems. Aleh: enterprise B2B closes (AB InBev) but lacks pharma/lab sales experience",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-autonomous-labs",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Lab automation engineers already budget $500K+ for robotic systems; manual calibration every 8-12 hours is documented operational pain blocking lights-out operation",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 2,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 1,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w03",
+      "kind": "seed",
+      "parent": null,
+      "loop": 3,
+      "scores": {
+        "today_score": 56.4,
+        "projected_score": 82.2,
+        "today": {
+          "total": 56.4,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 0.65,
+              "points": 9.75
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 82.2,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 0.65,
+              "points": 9.75
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.86,
+              "points": 5.16
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Potentially fundable; needs sharper proof or story"
+      },
+      "norm_family": "autonomous-labs"
+    },
+    {
+      "name": "Interceptor Aim Calibration Loop",
+      "family": "counter-drone",
+      "tagline": "Counter-drone interceptors self-tune aim per site's sensor rig geometry in ~100 episodes vs months of human calibration.",
+      "mutation": "seed: YC S26 Counter-Swarm Defense RFP + Ed's Saronic defense perception background",
+      "icp": "Defense contractor integration engineers setting up counter-drone systems at forward bases/critical infrastructure where $3M Patriot vs $500 FPV economics demand autonomous interceptors",
+      "problem": "Each interceptor deployment requires weeks of manual sensor-fusion calibration to account for site-specific mount angles, vibration, interference patterns, and environmental factors - human engineering bottleneck blocks rapid deployment",
+      "why_now": "FPV drone swarm tactics proven in Ukraine; DoD shifting from expensive missiles to autonomous interceptor networks; sensor fusion hardware commoditized but site calibration remains manual engineering nightmare",
+      "demand_evidence": "YC-S26-5 Counter-Swarm Defense: Patriot $3M vs FPV drone $500 cost asymmetry driving need for autonomous interceptor systems with sensor-fusion and attacks on autonomy stack",
+      "mvp_plan": "Mock interceptor rig with camera + projectile launcher; demonstrate 30-second setup vs 2-week traditional calibration by auto-learning site geometry through scored intercept episodes; validate with defense contractor on non-classified test range",
+      "market_expansion": "$500M beachhead (counter-drone systems for 1000+ critical infrastructure sites); $5B+ expansion (autonomous defense systems, maritime interdiction, space debris tracking, precision munitions)",
+      "defensibility": "Site-specific calibration dataset + learned sensor-fusion policies per deployment environment; each installation generates proprietary episode data that improves the loop's adaptation speed",
+      "business_model": "Defense contractors pay $50K-200K per site license; 70% gross margins on software; CAC through defense industry conferences + Ed's Saronic network; expansion via additional threat vectors per site",
+      "experiment_4wk": "Build interceptor simulator, partner with one defense contractor for non-classified testing, demonstrate measurable aim improvement vs baseline manual calibration on their test range",
+      "go_no_go": ">=30% faster calibration convergence in <=100 episodes vs contractor's current manual process",
+      "why_pitch_antler": "Defense spending surge + proven team (Ed's perception at Saronic + Aleh's enterprise sales track) + measurable technical wedge. Clear path from interceptor calibration to broader autonomous defense systems market.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed: Perception Engineer at Saronic (autonomous maritime/defense) + NASA JPL robotics = direct defense sensor-fusion background. Aleh: closes first enterprise customers cold (AB InBev) + quantified PMF discipline",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "YC-S26-5 Counter-Swarm Defense",
+          "differentiation": 1,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "YC-S26-5 cites $3M Patriot vs $500 FPV drone cost asymmetry demonstrating urgent defense spending need",
+          "buyer_already_spends": true,
+          "story_clarity": 1,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 15,
+          "design_partners": 2,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 1,
+          "willingness_to_pay": 1,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w04",
+      "kind": "seed",
+      "parent": null,
+      "loop": 4,
+      "scores": {
+        "today_score": 60.5,
+        "projected_score": 78.0,
+        "today": {
+          "total": 60.5,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.65,
+              "points": 5.2
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 0.65,
+              "points": 1.3
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 78.0,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.775,
+              "points": 11.62
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.51,
+              "points": 9.18
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.65,
+              "points": 5.2
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.86,
+              "points": 5.16
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 0.65,
+              "points": 1.3
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Potentially fundable; needs sharper proof or story"
+      },
+      "norm_family": "counter-drone"
+    },
+    {
+      "name": "RoboLoop Calibration Infrastructure",
+      "family": "robotics-infra",
+      "tagline": "Episode-capture + RL-environment + auto-calibration loop as infrastructure for robotics teams drowning in sim-to-real tuning.",
+      "mutation": "seed: targeting the 'data crusade' coordination stack - selling the autoresearch calibration loop itself as B2B infra",
+      "icp": "Head of Robotics Engineering at robotics startups/labs with 5-50 robot deployments, burning $50K+/month on sim-to-real calibration engineering hours",
+      "problem": "Robotics teams spend 60-80% of engineering cycles manually tuning each robot deployment for real-world variations (lighting, surfaces, fixture tolerances), burning $200K-$2M annually on what should be automated calibration",
+      "why_now": "AI agents can now write and test code autonomously; robotics deployments scaling from labs to production; VC funding robotics infra after seeing OpenAI's success with foundation model APIs",
+      "demand_evidence": "a16z-AD-data-crusade: '2026 defined by data constraints; each production run is training fodder; opening = the coordination stack: collection/annotation/consent, RL environments and training pipelines, eventually intelligent machines'",
+      "mvp_plan": "Deploy RoboLoop on 3 partner robot rigs: install episode-capture cameras + MCP server, run 100-episode calibration sprints, measure accuracy improvement vs manual tuning baseline, package as API/SDK",
+      "market_expansion": "$150M beachhead (5,000 robotics companies \u00d7 $30K annual calibration tooling); $2B+ expansion into autonomous vehicle testing, manufacturing QA loops, drone fleet optimization",
+      "defensibility": "Proprietary episode dataset per robot type + environment; calibration policy library that improves with each deployment; workflow lock-in via MCP protocol integration",
+      "business_model": "Robotics companies pay $2K/month per robot + $0.10/episode; 70% gross margin (cloud compute costs); sales via robotics conferences + GitHub/demo rigs; expansion via multi-robot fleet deals",
+      "experiment_4wk": "Deploy RoboLoop on 3 different partner robot types, run 200-episode calibration sprints each, measure accuracy/speed improvement vs their current manual tuning process",
+      "go_no_go": ">=30% relative success-rate improvement on 2+ partner rigs in <=300 episodes vs their manual baseline",
+      "why_pitch_antler": "This matches a16z's 'data crusade' thesis perfectly - selling the coordination stack itself rather than end applications. The robotics infra market is exploding but calibration tooling is still Stone Age manual engineering.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed: 'Core expertise: real-world perception, sensor fusion, robotics research engineering across defense, space, and automation' - direct robotics engineering experience. Aleh: 'Ships paying-customer products in days with Claude Code', 'Closes first 5-10 enterprise/design-partner customers from cold (AB InBev, CDEK)' - proven B2B infra sales to technical buyers",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-data-crusade: Data crusade in critical industries",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Robotics companies demonstrably spend $200K-$2M annually on calibration engineering - this is budgeted, repeated, urgent pain",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 25,
+          "design_partners": 3,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 200,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 2,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w05",
+      "kind": "seed",
+      "parent": null,
+      "loop": 5,
+      "scores": {
+        "today_score": 61.6,
+        "projected_score": 88.3,
+        "today": {
+          "total": 61.6,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 88.3,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 1.0,
+              "points": 6.0
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Strong Antler-fundable wedge"
+      },
+      "norm_family": "robotics-infra"
+    },
+    {
+      "name": "LineBot Commissioning Loop",
+      "family": "robot-cell-commissioning",
+      "tagline": "Collapse weeks of integrator calibration on new robotic production lines to hours via autonomous self-tuning.",
+      "mutation": "seed: YC S26 #8 Hardware Supply Chain + a16z factory renaissance demands",
+      "icp": "Manufacturing Engineers at mid-market manufacturers ($50M-$500M revenue) installing new robotic cells, triggered by line commissioning delays eating into production schedules, budget owner = Plant Manager",
+      "problem": "New robotic cell commissioning takes 2-6 weeks of $2K/day integrator time to tune vision systems, end effectors, and motion paths to real-world conditions (lighting variations, part tolerances, fixture wear)",
+      "why_now": "Reshoring + supply chain resilience drives 40% growth in US robotic installations; integrator shortage creates 3-month backlogs; manufacturers need faster line bring-up to hit aggressive production timelines",
+      "demand_evidence": "YC-S26-8 Hardware Supply Chain: 'Shenzhen design->part in a day, US takes weeks; wants dramatically faster parts, tight design/manufacturing/logistics integration' + a16z-AD-factory 'speed design cycles with design-for-manufacture'",
+      "mvp_plan": "Partner with 2-3 mid-market manufacturers on new line installs; deploy Pong Academy's calibration loop on their vision-guided pick-and-place cells; measure commissioning time reduction vs standard integrator process",
+      "market_expansion": "$200M beachhead (US robotic integration services) expanding to $2B+ factory automation software, then $20B+ industrial robotics market as commissioning becomes plug-and-play",
+      "defensibility": "Episode dataset of successful calibration policies per cell type + environment variation; workflow flywheel as each installation generates training data for faster future commissioning",
+      "business_model": "Payer: Plant Managers; $50K-$200K per cell commissioning (vs $100K-$400K integrator costs); 80%+ gross margins; CAC via integrator partnerships + trade shows; expansion: multi-cell sites + annual recalibration",
+      "experiment_4wk": "Partner with 1 friendly manufacturer on upcoming cell install; deploy calibration loop alongside standard integrator process; measure time-to-production-ready and defect rates",
+      "go_no_go": ">=50% commissioning time reduction vs integrator baseline on partner cell in <=200 calibration episodes",
+      "why_pitch_antler": "Manufacturing reshoring creates urgent demand for faster robotic cell deployment, hitting both YC and a16z priority themes. This is the wedge that transforms robotic integration from artisanal to automated.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 1,
+          "founder_fit_justification": "Ed: robotics research engineering at L5 Automation + KEF Robotics directly relevant to industrial robotics; Aleh: no direct manufacturing sales experience but proven enterprise B2B closer (AB InBev, CDEK)",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "YC-S26-8 Hardware Supply Chain + a16z-AD-factory",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Manufacturing engineers already budget $100K-$400K per cell for integrator commissioning; 2-6 week delays directly impact production schedules",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 2,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 150,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 2,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w06",
+      "kind": "seed",
+      "parent": null,
+      "loop": 6,
+      "scores": {
+        "today_score": 56.4,
+        "projected_score": 83.1,
+        "today": {
+          "total": 56.4,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 0.65,
+              "points": 9.75
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 83.1,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 0.65,
+              "points": 9.75
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 1.0,
+              "points": 6.0
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Potentially fundable; needs sharper proof or story"
+      },
+      "norm_family": "industrial-arms"
+    },
+    {
+      "name": "RoboCell Commissioning AutoLoop",
+      "family": "robot-cell-commissioning",
+      "tagline": "AI-native commissioning for industrial robot cells: 72-hour auto-calibration replacing 2-week manual engineering cycles.",
+      "mutation": "Sharpened ICP from generic 'robotics companies' to Manufacturing Engineering Managers commissioning new robot cells in automotive/electronics production lines - the exact buyer who budgets $50K-200K per cell commissioning project",
+      "icp": "Manufacturing Engineering Manager at automotive/electronics OEMs commissioning new robot cells (10-50 cells/year), responsible for $2M+ capex budgets, triggered by new model launches or line retooling",
+      "problem": "Robot cell commissioning takes 2-3 weeks of $150/hour systems integrator time ($50K-200K per cell) to manually tune vision systems, path planning, and force feedback for production tolerances - blocking $10M+ production lines",
+      "why_now": "Manufacturing reshoring driving 3x robot cell deployments; AI agents can now autonomously write/test calibration code; Industry 4.0 budgets mandating lights-out manufacturing capability",
+      "demand_evidence": "a16z-AD-factory: 'Renaissance of the American factory - Factory mindset on manufacturing; modular AI+autonomy alongside skilled workers; speed design cycles with design-for-manufacture' - directly calls for faster commissioning cycles",
+      "mvp_plan": "Deploy RoboCell AutoLoop on 3 partner automotive production cells: install episode-capture cameras + MCP server, run 500-episode auto-calibration sprints targeting pick-and-place accuracy, measure time-to-production vs manual baseline",
+      "market_expansion": "$180M beachhead (12K new US robot cells/year \u00d7 $15K software licensing); $1.2B expansion into brownfield retooling, semiconductor fab tooling, aerospace assembly lines",
+      "defensibility": "Proprietary calibration policy library per cell type + production environment; episode dataset that improves with each deployment; workflow lock-in via MCP integration with existing manufacturing execution systems",
+      "business_model": "Manufacturing Engineering teams pay $15K software license per cell commissioning + $150/hour for systems integrator deployment; 85% gross margin; sales via systems integrator channel partnerships (ABB, KUKA, Fanuc); expansion via multi-cell factory deals",
+      "experiment_4wk": "Partner with 2 automotive systems integrators to deploy RoboCell AutoLoop on active commissioning projects, measure time-to-production-ready vs their manual calibration baseline",
+      "go_no_go": ">=50% reduction in commissioning time (from 2+ weeks to <1 week) on 2+ partner cells with <5% accuracy degradation vs manual tuning",
+      "why_pitch_antler": "This targets the exact 'American factory renaissance' thesis with a $180M immediate beachhead and clear expansion into $1.2B manufacturing automation. The buyer already budgets $50K-200K per project making unit economics immediately defensible.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed: 'Robotics Research Engineer at L5 Automation (2021-2024)' + 'Core expertise: real-world perception, sensor fusion, robotics research engineering' - direct industrial robotics experience. Aleh: 'AB InBev: closed strategic investment + global supply agreement' + 'Validated unit economics $0.42/lb COGS, $3.35M CapEx at commercial scale' - proven B2B manufacturing sales and industrial unit economics validation",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-factory: Renaissance of the American factory",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Manufacturing Engineering Managers demonstrably budget $50K-200K per robot cell commissioning project - this is recurring capex spending blocking $10M+ production lines",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 2,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 150,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 2,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w07",
+      "kind": "mutate",
+      "parent": "w05",
+      "loop": 7,
+      "scores": {
+        "today_score": 61.6,
+        "projected_score": 88.3,
+        "today": {
+          "total": 61.6,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 88.3,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 1.0,
+              "points": 6.0
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Strong Antler-fundable wedge"
+      },
+      "norm_family": "industrial-arms"
+    },
+    {
+      "name": "RoboIntegrator OEM Calibration Stack",
+      "family": "robotics-infra",
+      "tagline": "White-label autoresearch calibration loop for robot integrators and OEMs to embed in customer deployments, creating a proprietary episode dataset and distribution flywheel.",
+      "mutation": "strengthened defensibility via OEM/integrator distribution channel + per-environment episode dataset monopoly; shifted from direct robotics company sales to B2B2B through integrators",
+      "icp": "VP Engineering at robot integrators (ABB, KUKA, Fanuc) shipping 100+ custom installations annually, burning $2M+ on post-deployment calibration support calls",
+      "problem": "Robot integrators spend 40-60% of post-sale engineering on customer site calibration issues (lighting changes, fixture drift, environmental variations), creating $200K+ annual support overhead per major customer",
+      "why_now": "AI agents can autonomously write/test code; robotics moving from labs to production deployments; integrators need differentiated IP as hardware commoditizes",
+      "demand_evidence": "a16z-AD-data-crusade: 'coordination stack: collection/annotation/consent, RL environments and training pipelines' + a16z-AD-industrial: 'Robotics-heavy manufacturing, AI coordinating fleets of autonomous machines' - selling the coordination infrastructure itself",
+      "mvp_plan": "Partner with 1 mid-tier integrator, embed RoboLoop SDK in their next 3 customer deployments, run 500+ episode calibration cycles per site, demonstrate 50%+ reduction in their support call volume",
+      "market_expansion": "$300M beachhead (50 major integrators \u00d7 $6M annual calibration tooling); $3B+ expansion into autonomous vehicle OEMs, drone manufacturers, surgical robot companies embedding adaptive calibration",
+      "defensibility": "Proprietary episode dataset per robot model + environment combination owned exclusively via integrator partnerships; distribution moat through OEM embedding making switching cost prohibitive; each deployment feeds the central calibration policy library",
+      "business_model": "Integrators pay $50K annual license + $5/robot/month; 80% gross margin (pure software); sales via robotics trade shows + integrator partnerships; expansion via multi-customer fleet deals and cross-integrator licensing",
+      "experiment_4wk": "Sign 1 integrator partnership, deploy RoboLoop on 2 of their active customer sites, run 200-episode calibration sprints, measure reduction in their support ticket volume vs baseline",
+      "go_no_go": ">=40% reduction in calibration-related support tickets at partner integrator sites within 300 episodes vs their historical baseline",
+      "why_pitch_antler": "This creates a true distribution moat through OEM partnerships while building the proprietary episode dataset that becomes more valuable with each deployment. Perfect match for a16z's 'data crusade' coordination stack thesis with proven B2B2B revenue model.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed: 'Core expertise: real-world perception, sensor fusion, robotics research engineering across defense, space, and automation' - direct robotics engineering experience with integrator ecosystem. Aleh: 'AB InBev: closed strategic investment + global supply agreement', 'Closes first 5-10 enterprise/design-partner customers from cold' - proven B2B partnership and enterprise channel sales",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-data-crusade: Data crusade in critical industries",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Robot integrators demonstrably spend $200K+ annual support overhead per major customer on calibration issues - this is budgeted, repeated, urgent operational pain",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 2,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 150,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 2,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w08",
+      "kind": "mutate",
+      "parent": "w05",
+      "loop": 8,
+      "scores": {
+        "today_score": 61.6,
+        "projected_score": 88.3,
+        "today": {
+          "total": 61.6,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 88.3,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 1.0,
+              "points": 6.0
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Strong Antler-fundable wedge"
+      },
+      "norm_family": "industrial-arms"
+    },
+    {
+      "name": "Industrial Robocell Commissioning Loop",
+      "family": "robotics-infra",
+      "tagline": "Autoresearch calibration loop that commissions industrial robot cells 10x faster than manual systems integrator tuning.",
+      "mutation": "narrowed from generic robotics infra to specific industrial robot cell commissioning - the $2B systems integrator bottleneck with measurable 48-hour commissioning cycles",
+      "icp": "Head of Automation Engineering at Tier 1 automotive suppliers with 10+ robocells, spending $500K+/year on systems integrator commissioning delays",
+      "problem": "Each new robocell takes 2-6 weeks to commission (teach pendant programming + fixture tolerances + vision calibration), costing $50K-200K per cell in integrator hours and production downtime",
+      "why_now": "Automotive onshoring + EV transition driving 300% robocell deployment growth; AI agents can now autonomously write and test robot code; factory labor shortage making 48-hour autonomous commissioning critical",
+      "demand_evidence": "a16z-AD-factory: 'Renaissance of the American factory - deploy autonomy for dangerous tasks; speed design cycles with design-for-manufacture' - directly targets industrial automation acceleration",
+      "mvp_plan": "Deploy commissioning loop on partner Tier 1 supplier robocell: install episode-capture cameras, run 500-episode pick-and-place calibration sprint, measure commissioning time vs their baseline integrator process",
+      "market_expansion": "$400M beachhead (20,000 US automotive robocells \u00d7 $20K annual commissioning); $2B expansion into general manufacturing, electronics assembly, food processing robocells",
+      "defensibility": "Proprietary robocell commissioning dataset per fixture type + robot brand; calibration policy library that improves with each deployment; workflow lock-in as the commissioning becomes the robot's permanent runtime",
+      "business_model": "Automotive suppliers pay $15K per robocell commissioning + $3K/month runtime optimization; 75% gross margin (pure software/compute); sales via automation tradeshows + systems integrator partnerships; expansion via multi-plant fleet deals",
+      "experiment_4wk": "Deploy commissioning loop on 1 partner automotive supplier robocell, run complete pick-and-place commissioning sprint, measure total commissioning time vs their current integrator baseline",
+      "go_no_go": ">=75% commissioning time reduction (from 2+ weeks to <=3 days) on the partner robocell with >=95% final accuracy vs integrator baseline",
+      "why_pitch_antler": "This attacks a $2B bottleneck where every day saved is worth $10K+ to the customer in production downtime. The automotive onshoring wave creates massive demand for faster robocell deployment.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed: 'Robotics Research Engineer at L5 Automation (2021-2024), KEF Robotics (2020-2021)' - direct industrial robotics experience. Aleh: 'AB InBev: closed strategic investment + global supply agreement', 'Validated unit economics $0.42/lb COGS, $3.35M CapEx at commercial scale' - proven industrial B2B sales and manufacturing operations",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-factory: Renaissance of the American factory",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Automotive suppliers demonstrably spend $500K+/year on systems integrator commissioning - this is budgeted OpEx with measurable ROI on cycle time reduction",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 1,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 150,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 2,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w09",
+      "kind": "mutate",
+      "parent": "w05",
+      "loop": 9,
+      "scores": {
+        "today_score": 61.6,
+        "projected_score": 86.8,
+        "today": {
+          "total": 61.6,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 86.8,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 1.0,
+              "points": 6.0
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Strong Antler-fundable wedge"
+      },
+      "norm_family": "industrial-arms"
+    },
+    {
+      "name": "Industrial RoboCell Self-Commissioning Stack",
+      "family": "industrial-arms",
+      "tagline": "Autoresearch calibration loop that commissions industrial robot cells from 80% manual tuning to lights-out operation in 300 episodes.",
+      "mutation": "recombine: grafted RoboLoop's sharp robotics-infra ICP with Industrial Robot's proven $1B+ factory automation adjacency map",
+      "icp": "Head of Manufacturing Engineering at mid-market manufacturers with 10-100 robot cells, burning $500K+ annually on commissioning engineers who manually tune each cell for 2-6 weeks",
+      "problem": "Industrial robot cells require 2-6 weeks of $2K/day commissioning engineering per deployment to manually tune for real-world variations (fixture tolerances, part inconsistencies, lighting), creating $2M+ annual bottlenecks that delay production lines",
+      "why_now": "AI agents can now write and test code autonomously; manufacturers reshoring production need 10x faster robot deployment cycles; labor shortage forcing automation of commissioning itself",
+      "demand_evidence": "a16z-AD-factory: 'Renaissance of the American factory - Factory mindset on energy/mining/construction/manufacturing; modular AI+autonomy alongside skilled workers; speed design cycles with design-for-manufacture'",
+      "mvp_plan": "Deploy episode-capture cameras + MCP server on 3 partner robot cells across different manufacturers, run 300-episode self-commissioning sprints, measure time-to-production vs manual commissioning baseline",
+      "market_expansion": "$500M beachhead (50K US robot cells \u00d7 $10K annual commissioning tooling); $5B+ expansion into semiconductor fabs, automotive assembly, food processing, warehouse automation via same calibration stack",
+      "defensibility": "Proprietary commissioning policy library per robot type + manufacturing process; episode dataset flywheel that improves with each deployment; workflow lock-in via integration with Fanuc/ABB/Kuka control systems",
+      "business_model": "Manufacturers pay $8K/robot cell annual license + $50/commissioning episode; 75% gross margin (cloud compute + on-site hardware); sales via manufacturing conferences + systems integrator partnerships; expansion via multi-cell factory deals",
+      "experiment_4wk": "Deploy self-commissioning stack on 3 different robot cells at 2 manufacturing partners, run full commissioning cycles, measure time-to-production and success rate vs their manual baseline",
+      "go_no_go": ">=50% time reduction to production-ready AND >=95% success rate on 2+ robot cells vs manual commissioning baseline",
+      "why_pitch_antler": "This hits a16z's factory renaissance thesis perfectly - automating the commissioning bottleneck that blocks US manufacturing scale. The rare GTM+perception founder pair can execute both the technical stack and the enterprise sales cycle.",
+      "evidence": {
+        "qual": {
+          "problem_intensity": 2,
+          "icp_specificity": 2,
+          "founder_fit": 2,
+          "founder_fit_justification": "Ed: 'Robotics Research Engineer at L5 Automation (2021-2024)', 'Core expertise: real-world perception, sensor fusion, robotics research engineering' - direct industrial robotics experience. Aleh: 'AB InBev: closed strategic investment + global supply agreement', 'Validated unit economics $0.42/lb COGS, $3.35M CapEx at commercial scale' - proven manufacturing B2B sales and unit economics validation",
+          "why_now": 2,
+          "rfp_match": true,
+          "rfp_which": "a16z-AD-factory: Renaissance of the American factory",
+          "differentiation": 2,
+          "market_beachhead": 2,
+          "business_model": 2,
+          "problem_intensity_justification": "Manufacturers demonstrably spend $500K+ annually on commissioning engineering - this is budgeted, repeated, urgent production bottleneck",
+          "buyer_already_spends": true,
+          "story_clarity": 2,
+          "sales_cycle": 1
+        },
+        "projected_experiment_targets": {
+          "discovery_interviews": 20,
+          "design_partners": 2,
+          "lois": 1,
+          "paid_customers": 0,
+          "waitlist": 150,
+          "prototype": 2,
+          "retention_signal": 1,
+          "willingness_to_pay": 2,
+          "sales_cycle": 1
+        }
+      },
+      "id": "w10",
+      "kind": "mutate",
+      "parent": "w05",
+      "loop": 10,
+      "scores": {
+        "today_score": 61.6,
+        "projected_score": 88.3,
+        "today": {
+          "total": 61.6,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.55,
+              "points": 8.25
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 0.65,
+              "points": 7.8
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.15,
+              "points": 2.7
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.545,
+              "points": 5.45
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.65,
+              "points": 6.5
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.7,
+              "points": 5.6
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 0.72,
+              "points": 4.32
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "at_risk",
+            "G3_validation_beyond_vision": "fail",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "projected": {
+          "total": 88.3,
+          "breakdown": {
+            "c1_painful_problem": {
+              "label": "Painful problem in narrow beachhead",
+              "weight": 15,
+              "fraction": 0.865,
+              "points": 12.97
+            },
+            "c2_specific_wedge": {
+              "label": "Specific wedge, not generic TAM",
+              "weight": 12,
+              "fraction": 1.0,
+              "points": 12.0
+            },
+            "c3_founder_market_fit": {
+              "label": "Founder-market fit",
+              "weight": 15,
+              "fraction": 1.0,
+              "points": 15.0
+            },
+            "c4_evidence_of_demand": {
+              "label": "Evidence of demand",
+              "weight": 18,
+              "fraction": 0.7,
+              "points": 12.6
+            },
+            "c5_mvp_feasibility": {
+              "label": "Product proof / MVP feasibility",
+              "weight": 10,
+              "fraction": 0.895,
+              "points": 8.95
+            },
+            "c6_market_expansion": {
+              "label": "Market size + expansion path",
+              "weight": 10,
+              "fraction": 0.8,
+              "points": 8.0
+            },
+            "c7_differentiation": {
+              "label": "Differentiation / defensibility",
+              "weight": 8,
+              "fraction": 0.85,
+              "points": 6.8
+            },
+            "c8_business_model": {
+              "label": "Business model + unit economics",
+              "weight": 6,
+              "fraction": 1.0,
+              "points": 6.0
+            },
+            "c9_timing_whynow": {
+              "label": "Timing / market trend",
+              "weight": 4,
+              "fraction": 1.0,
+              "points": 4.0
+            },
+            "c10_story_clarity": {
+              "label": "Fundraise readiness / story clarity",
+              "weight": 2,
+              "fraction": 1.0,
+              "points": 2.0
+            }
+          },
+          "gates": {
+            "G1_founder_market_fit": "pass",
+            "G2_problem_solution_fit": "pass",
+            "G3_validation_beyond_vision": "pass",
+            "G4_scalable_outcome": "pass",
+            "G5_compelling_story": "pass"
+          }
+        },
+        "today_evidence_used": {
+          "discovery_interviews": 0,
+          "design_partners": 0,
+          "lois": 0,
+          "paid_customers": 0,
+          "waitlist": 0,
+          "prototype": 1,
+          "retention_signal": 0,
+          "willingness_to_pay": 0,
+          "sales_cycle": 1
+        },
+        "gates_at_risk_today": [
+          "G2_problem_solution_fit",
+          "G3_validation_beyond_vision"
+        ],
+        "band_today": "Interesting but under-validated",
+        "band_projected": "Strong Antler-fundable wedge"
+      },
+      "norm_family": "industrial-arms"
+    }
+  ],
+  "top3_ids": [
+    "w05",
+    "w07",
+    "w03"
+  ],
+  "verdict": {
+    "any_candidate_clears_70_today": false,
+    "best_today_id": "w05",
+    "best_today_name": "RoboLoop Calibration Infrastructure",
+    "best_today_score": 61.6
+  },
+  "top3_selection": "best wedge per normalized family, ranked by projected score, so the Top 3 are 3 genuinely distinct wedges"
+}
